@@ -1,0 +1,24 @@
+{
+  "name": "lski-console-shim",
+  "version": "1.0.0",
+  "homepage": "https://github.com/lski/lski-console-shim",
+  "authors": [
+    "Lski <dev@lski.co.uk>"
+  ],
+  "description": "A simple shim to ensure that using console in IE doesnt explode when dev tools are not open",
+  "main": "lski-console-shim.js",
+  "keywords": [
+    "console",
+    "ie",
+    "shim"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
