@@ -1,4 +1,4 @@
 /*!
-* Lski-console-shim - 1.0
+* Lski-console-shim - 1.0.1
 */
-!function(o,n){if(window.console===n){var i=function(){};window.console={log:i,error:i,warn:i,info:i,time:i,timeEnd:i,count:i,debug:i,profile:i,profileEnd:i,trace:i,dir:i,dirxml:i,assert:i,group:i,groupEnd:i}}}(window);
+!function(o,n){if(o.console===n){var r=function(){};o.console={log:r,error:r,warn:r,info:r,time:r,timeEnd:r,count:r,debug:r,profile:r,profileEnd:r,trace:r,dir:r,dirxml:r,assert:r,group:r,groupEnd:r}}}(window);

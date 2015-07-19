@@ -1,10 +1,10 @@
 /*!
-* Lski-console-shim - 1.0
+* Lski-console-shim - 1.0.1
 */
 /**
 * Simply prevents errors in IE, important you should still remove all console calls in debug code
 */
-(function(win, undefined) {
+(function(window, undefined) {
 	
 	if(window.console === undefined) {
         
