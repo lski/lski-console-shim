@@ -1,16 +1,14 @@
-/*!
-* Lski-console-shim - 1.0.1
-*/
+/*! lski-console-shim-1.0.1 */
 /**
-* Simply prevents errors in IE, important you should still remove all console calls in debug code
+* Simply prevents errors in IE when the console is not open.
 */
-(function(window, undefined) {
-	
-	if(window.console === undefined) {
-        
+(function(w, undefined) {
+
+	if(w.console === undefined) {
+
         var f = function() {};
-        
-		window.console = {
+
+		w.console = {
 			log: f,
 			error: f,
 			warn: f,
@@ -29,5 +27,5 @@
 			groupEnd: f
 		};
 	}
-	
+
 })(window);
