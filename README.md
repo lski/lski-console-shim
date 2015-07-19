@@ -1,12 +1,8 @@
 Lski Console Shim
 ==========
 
-Two simple javascript files for preventing console errors whilst testing in IE without the console window open.
+A simple javascript file for preventing console errors whilst testing in IE without the console window open.
 
-console-basic.js:
+console-shim.js:
 -----------------
-Simply creates a new dummy object that has empty functions if console isnt found.
-
-console.js:
------------
-Does a simple check to see if the console object exists, and creates an empty one if not, however to handle older webkit browsers as well the newer functions such as time and timeEnd are each checked to see if they exist after a basic set of functions have been added. I have also tried to implement the time and timeEnd functions so they are useable in the older browsers and in IE as well.
+Simply creates a new dummy object that has empty functions if console isnt found. Just place the dist file into your web application to use it.
