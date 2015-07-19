@@ -1,4 +1,4 @@
-/*! lski-console-shim-1.0.1 */
+/*! lski-console-shim-1.0.2 */
 /**
 * Simply prevents errors in IE when the console is not open.
 */
