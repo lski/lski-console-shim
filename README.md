@@ -1,38 +1,27 @@
 Lski Console Shim
 ==========
 
-A simple javascript file for preventing console errors whilst testing in IE without the console window open.
+A ponyfill to prevent errors caused by using the console in IE when the developer tools are not open.
 
-### Install
+It checks if the window object and console object exists and if the  does it by creating an empty no-op function that simply does nothing when called.
 
-#### Bower
+## Install
 
-```
+```js
+// npm
+npm install lski-console-shim
+
+//bower
 bower install lski-console-shim
-```
 
-#### Manual
-
-Download the lski-console-shim.js file in the dist folder and reference it on your page
-
-```
+//manually download the file and reference it via the script tag
 <script type='text/javascript' src='lski-console-shim.js'></script>
 ```
 
-### Notes
+## Build
 
-It creates a dummy console with an empty function to cover the functions on the standard console object.
-
-It does feature testing, rather than browser sniffing to identify if the console doesnt exist. Therefore it will work for any browser without a console object not just IE.
-
-### Build
-
-The dist build is created via gulp.  From the command line run the following
+The distribution build is created via gulp using node.  Run the following from the command line to install the node dependancies and run the gulp build step. __Note:__ Node needs to be installed on your system.
 ```
 npm install
-```
-To install the gulp dependancies, followed by:
-```
 gulp
 ```
-To generate the dist/lski-console-shim.js file

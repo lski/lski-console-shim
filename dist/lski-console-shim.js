@@ -1,2 +1,2 @@
 /*! lski-console-shim-1.0.2 */
-!function(o,n){if(o.console===n){var r=function(){};o.console={log:r,error:r,warn:r,info:r,time:r,timeEnd:r,count:r,debug:r,profile:r,profileEnd:r,trace:r,dir:r,dirxml:r,assert:r,group:r,groupEnd:r}}}(window);
+"undefined"!=typeof window&&!function(o,n){"use strict";if(o.console===n){var e=function(){};o.console={log:e,error:e,warn:e,info:e,time:e,timeEnd:e,count:e,debug:e,profile:e,profileEnd:e,trace:e,dir:e,dirxml:e,assert:e,group:e,groupEnd:e}}}(window);
