@@ -1,6 +1,6 @@
 {
   "name": "lski-console-shim",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple shim to ensure that using console in IE doesnt explode when dev tools are not open",
   "main": "dist/lski-console-shim.js",
   "dependencies": {},
