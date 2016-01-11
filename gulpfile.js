@@ -28,25 +28,16 @@ gulp.task('js', () => {
 /**
  * Ensures the project name and the version number in settings files to match the dist
  */
-gulp.task('settings:package', () => {
+gulp.task('version', function() {
 
-    return gulp.src('package.json')
+    return gulp.src("./*.json")
         .pipe(jeditor(settings))
         .pipe(gulp.dest('./'));
 });
-
-gulp.task('settings:bower', () => {
-
-    return gulp.src('bower.json')
-        .pipe(jeditor(settings))
-        .pipe(gulp.dest('./'));
-});
-
-gulp.task('settings', ['settings:package', 'settings:bower']);
 
 /**
  * Run build
  */
-gulp.task('default', ['clean','settings'], () => {
+gulp.task('default', ['clean','version'], () => {
     gulp.start('js');
 });
