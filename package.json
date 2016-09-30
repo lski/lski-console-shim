@@ -22,7 +22,6 @@
     "console",
     "ie",
     "shim",
-    "ponyfill",
     "polyfill"
   ],
   "author": "Lee Cooper <lee.cooper@lski.uk>",
